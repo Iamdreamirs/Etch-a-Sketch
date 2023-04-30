@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./javone.js" defer></script>
+</head>
+
+<body>
+    <div class="fullPage">
+
+        <div class="header">
+            <h1 class="title">
+                Etch-A-Sketch
+            </h1>
+        </div>
+
+        <div class="middleAndFooter">
+
+            <div class="middle-content">
+
+                <div class='buttons'>
+                    <div id="palette">
+                        <label for="colorPicker">Choose a color</label>
+                        <input type="color" id="colorPicker">
+                    </div>
+                    <input class="button" id="drawerButton" type="button" value="Drawer">
+                    <input class="button" id="eraserButton" type="button" value="Eraser">
+                    <input class="button" id="rainbowButton" type="button" value="Rainbow">
+
+                    <div class="gridState">
+                        <div class="text">
+                            <p>Grid state</p>
+                        </div>
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch"
+                                tabindex="0" checked>
+                            <label class="onoffswitch-label" for="myonoffswitch">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                </div>
+
+            </div>
+
+            <div class="slider">
+                <input type="range" min="1" max="max" value="0" id="myRange">
+                <p id="rangeValue">16x16</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
